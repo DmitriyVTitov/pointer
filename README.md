@@ -2,6 +2,6 @@
 Generic pointer to value in Go
 
 ```Go
-a := 10
-p := pointer.To(a)
+p1 := pointer.To(10)
+p2 := pointer.To(true)
 ```
