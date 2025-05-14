@@ -2,6 +2,19 @@
 Generic pointer to value in Go
 
 ```Go
-p1 := pointer.To(10)
-p2 := pointer.To(true)
+import (
+	"testing"
+
+	"github.com/DmitriyVTitov/pointer"
+)
+
+type T struct {
+	BoolPointer   *bool
+	StringPointer *string
+}
+
+var V = T{
+	BoolPointer:   pointer.To(true),
+	StringPointer: pointer.To("string"),
+}
 ```
