@@ -3,8 +3,6 @@ Generic pointer to value in Go
 
 ```Go
 import (
-	"testing"
-
 	"github.com/DmitriyVTitov/pointer"
 )
 
