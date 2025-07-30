@@ -14,4 +14,9 @@ func TestTo(t *testing.T) {
 	if got := *To(s); got != s {
 		t.Errorf("got %v want %v", got, s)
 	}
+
+	var v any
+	if got := *To(v); got != nil {
+		t.Errorf("got %v want %v", got, nil)
+	}
 }
