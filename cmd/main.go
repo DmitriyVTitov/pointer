@@ -1,10 +1,3 @@
-# pointer
-Implements two functions:
-- Generic pointer to arbitrary value in Go
-- Value of generic pointer (or default if pointer is nil)
-
-Usage example:
-```Go
 package main
 
 import (
@@ -36,4 +29,3 @@ func main() {
 	var empty *string
 	fmt.Println(pointer.Val(empty) == "") // true
 }
-```
